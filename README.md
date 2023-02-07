@@ -1,4 +1,4 @@
-# Este es un curso de React.js basico
+# Este es un curso de React.js básico
 
 
 
