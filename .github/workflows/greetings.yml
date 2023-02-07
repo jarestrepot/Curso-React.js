@@ -10,10 +10,10 @@ jobs:
   Ejemplo:
     runs-on: ubuntu-latest
     steps:
-    - name: Setup Maven
+    - name: Maven Dependency Tree Dependency Submission
       # You may pin to the exact commit or the version.
-      # uses: stCarolas/setup-maven@07fbbe97d97ef44336b7382563d66743297e442f
-      uses: stCarolas/setup-maven@v.4.5
+      # uses: advanced-security/maven-dependency-submission-action@2ecce44ccb44fd4b52f43468d3644e2d3e2b3cf2
+      uses: advanced-security/maven-dependency-submission-action@v2.0.1
       with:
-        # Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0
-        maven-version: LucaFeger/action-maven-cli@1.1.0
+        # The GitHub token to use to submit the depedency snapshot to the repository
+        token: ${{ github.token }}
